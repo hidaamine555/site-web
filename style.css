@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body p{
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 12px;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('img/ravi-kumar-lEtNRV6N4K4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 230px;
+}
+.lienk ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+}
+.lienk ul li a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 2px;
+    font-size: 12px;
+}
+.lienk ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+    background: #bf1d5e;
+    transition: width 0.5s;
+}
+.lienk ul li a:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 20px 0 40px ;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #bf1d5e;
+    padding: 13px 33px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn1:hover{
+    border: 1px solid #bf1d5e;
+    background: #bf1d5e;
+    transition: 1s;
+}
+
+
+
+.course{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    background: #ffd8ff;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+.course-col h3{
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px;
+}
+
+
+
+
+.compus{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.compus h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.compus p{
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 12px;
+}
+.compus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.compus-col img{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(255, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.cta{
+    width: 100%;
+    margin-top: 100px;
+    background: linear-gradient(to right, #091347, #2d0b00);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h2{
+    margin-bottom: 40px;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+    font-size: 12px;
+}
+.lienk2 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 50px 5px;
+}
+.lienk2 ul li a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    padding: 5px 2px;
+    font-size: 12px;
+}
+.lienk2 ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    margin: auto;
+    display: block;
+    background: #bf1d5e;
+    transition: width 0.5s;
+}
+.lienk2 ul li a:hover::after{
+    width: 100%;
+}
+.icons .bi{
+    color: #bf1d5e;
+    margin: 0 13px;
+    cursor: pointer;
+}
+.bi-suit-heart{
+    color: #bf1d5e;
+}
+
+
+.about-hede{
+    height: 50vh;
+    width: 100%;
+    background-image: url(img/ravi-kumar-lEtNRV6N4K4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.about-hede h1{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.about_us{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.about-us-colmn{
+    flex-basis: 48%;
+    margin: 30px 2xp;
+}
+.about-us-colmn img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-us-colmn h1{
+    padding-top: 0;
+}
+.about-us-colmn p{
+    padding: 15px 0 25px;
+    text-align: right;
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.btn-about{
+    border: 1px solid #bf1d5e;
+    color: #bf1d5e;
+    background: transparent;
+}
+.btn-about:hover{
+    color: #fff;
+}
+
+
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left p{
+    padding: 0;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    color: #fff;
+    background: #bf1d5e;
+    padding: 7px 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(85, 85, 85, 0.6);
+    align-items: center;
+    padding: 8px;
+}
+.comment{
+    border: 1px solid #222;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment h1{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.commentform input,textarea{
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: none;
+    background: #f0f0f0;
+    outline: none;
+}
+.commentform button{
+    margin: 10px 0;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+}
+.location iframe{
+    width: 100%;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contact-colm{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-colm div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-colm div .bi{
+    font-size: 28px;
+    color: #bf1d5e;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-colm div h5{
+    font-size: 20px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.contact-colm div p{
+    padding: 0;
+}
+.contact-colm .contact input, .contact-colm textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    outline: none;
+}
+.contact-colm button{
+    margin: 10px 0;
+}
